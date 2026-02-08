@@ -32,6 +32,10 @@ void setup() {
 
   dht.begin();             // Initialize DHT11 sensor
 
+  // -------- Serial Monitor --------
+  Serial.begin(9600);
+  Serial.println("SYSTEM START | LCD + DHT11 | STATUS: OK");
+
   lcd.setCursor(0, 0);
   lcd.print("DHT11 TEST");
   delay(1500);
@@ -42,6 +46,13 @@ void loop() {
   // Read temperature and humidity from DHT11
   float humidity = dht.readHumidity();
   float temperature = dht.readTemperature();
+
+  // -------- Serial Output (ONE LINE) --------
+  Serial.print("TEMP: ");
+  Serial.print(temperature);
+  Serial.print(" C | HUM: ");
+  Serial.print(humidity);
+  Serial.println(" %");
 
   // Clear old LCD data
   lcd.clear();
