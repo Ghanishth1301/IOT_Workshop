@@ -92,6 +92,8 @@ Install BOTH drivers (safe even if only one is used).
    - Install the CP210x USB-to-UART driver
    - Restart computer if prompted
 
+for linux and mac users [link](https://drive.google.com/file/d/1nZE4W7jMdD5yyPHd5DDXLMcTQQmYanQ-/view?usp=drive_link)
+
 ### Step 2: Install Arduino IDE
 
 Follow the installation steps for your operating system.
